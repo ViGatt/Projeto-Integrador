@@ -1,6 +1,8 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FooterComponent } from './footer.component';
+import { Component, Input } from '@angular/core';
+
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
