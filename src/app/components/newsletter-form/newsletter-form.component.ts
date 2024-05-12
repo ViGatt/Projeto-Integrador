@@ -53,6 +53,11 @@ export class NewsletterFormComponent {
         },
         error: () => this.loading.set(false)
       })
+      {
+        console.log("Formulário válido");
+        return;
+      }
+      console.log("Formulário válido", this.newsletterForm.value);
+    }
     }
   }
-}
