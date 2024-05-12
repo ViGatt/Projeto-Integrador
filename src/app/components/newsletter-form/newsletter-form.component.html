@@ -1,17 +1,22 @@
 <section class="form-section">
   <div class="text">
       <h3>
-          Fique por dentro de tendências
+          Não encontrou algo que busca?
       </h3>
       <p>Estamos aqui para ajudar! Se você tiver alguma dúvida, problema ou simplesmente precisar de assistência, não hesite em entrar em contato conosco. Nossa equipe dedicada está pronta para fornecer suporte personalizado e responder às suas perguntas o mais rápido possível. Preencha o formulário abaixo e entraremos em contato com você em breve. Sua satisfação é a nossa prioridade</p>
   </div>
   <form [formGroup]="newsletterForm">
-    <label for="name">Name</label>
-    <input id="name" formControlName="name"/>
-    <label for="email">Email</label>
+    <label for="nome">Nome</label>
+    <input id="nome" formControlName="nome"/>
+    <label for="email">E-mail</label>
     <input id="email" formControlName="email"/>
+    <label for="endereço">Endereço</label>
+    <input id="endereço" formControlName="endereço"/>
+    <label for="descrição">Descrição</label>
+    <input id="descrição" formControlName="descrição"/>
+    
     <btn-primary 
-        btn-text="se inscreva" 
+        btn-text="Se inscreva" 
         variant="secondary"
         (submit)="onSubmit()"
         [disabled]="!newsletterForm.valid"

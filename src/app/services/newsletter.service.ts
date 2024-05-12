@@ -14,8 +14,8 @@ export class NewsletterService {
 
   constructor(private http: HttpClient) { }
 
-  sendData(name: string, email: string): Observable<NewsletterResponse>{
-    const data = {name, email};
+  sendData(nome: string, email: string,endereco: string,descricao: string): Observable<NewsletterResponse>{
+    const data = {nome, email,endereco,descricao};
 
     return this.http.post<NewsletterResponse>(this.endpointUrl, data);
   }

@@ -1,0 +1,15 @@
+{
+  "name": "PetShop",
+  "generator": "@radzen/angular-generator",
+  "theme": "default",
+  "logo": "",
+  "pages": [],
+  "layouts": [
+    "Login",
+    "Main"
+  ],
+  "startPage": null,
+  "https": false,
+  "navigation": [],
+  "dataSources": []
+}
